@@ -12,7 +12,7 @@ API_ID = int(getenv("API_ID", 26792227))
 API_HASH = getenv("API_HASH", "279cafdde7f7fce91b4868261a0578b2")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = "7823033591:AAGEQ0m2MR11d23DBpNCQGfDLKHMXJgCwTg"
+BOT_TOKEN = "7520152051:AAHXN4A3PSdL54Oy50edXaEG3_NvTk3RZvo"
 
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://api:api@bleach-backend.b7rf7.mongodb.net/?retryWrites=true&w=majority&appName=bleach-backend")
@@ -25,7 +25,7 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 900))
 LOGGER_ID = -1002648649223
 
 # Get this value from @BRANDRD_ROBOT on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", "6199446404"))
+OWNER_ID = int(getenv("OWNER_ID", "6833733930"))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name

@@ -12,7 +12,7 @@ API_ID = int(getenv("API_ID", 26792227))
 API_HASH = getenv("API_HASH", "279cafdde7f7fce91b4868261a0578b2")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", "17692864075:AAG4ElyPcJtbiY2s7RQ5-_UuWrPgLFVhpTc")
+BOT_TOKEN = "7823033591:AAGEQ0m2MR11d23DBpNCQGfDLKHMXJgCwTg"
 
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://api:api@bleach-backend.b7rf7.mongodb.net/?retryWrites=true&w=majority&appName=bleach-backend")
@@ -22,7 +22,7 @@ PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", None)
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 900))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", -1002271847179))
+LOGGER_ID = -1002648649223
 
 # Get this value from @BRANDRD_ROBOT on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID", "6199446404"))

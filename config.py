@@ -38,9 +38,7 @@ UPSTREAM_REPO = getenv(
     "https://github.com/EhSuhaa/MEst",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
-GIT_TOKEN = getenv(
-    "GIT_TOKEN", None
-)  # Fill this variable if your upstream repository is private
+GIT_TOKEN = "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" 
 
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/BRANDRD_BOT")
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/BRANDED_WORLD")

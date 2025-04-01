@@ -222,9 +222,9 @@ stream_1 : "<b><u>ꜱᴛᴀʀᴛᴇᴅ ꜱᴛʀᴇᴀᴍɪɴɢ</u></b>\n\n<b><bl
 stream_2 : "<b><blockquote>➲ Bʀᴀɴᴅᴇᴅ Sᴛᴀʀᴛᴇᴅ Sᴛʀᴇᴀᴍɪɴɢ |</blockquote></b>\n\n<b><blockquote>➠ Sᴛʀᴇᴀᴍ ᴛʏᴘᴇ :</b> ʟɪᴠᴇ sᴛʀᴇᴀᴍ [ᴜʀʟ]\n<b>➠ Rᴇǫᴜᴇsᴛᴇᴅ ʙʏ :</b> {0}</blockquote>"
 
 #General
-CLOSE_BUTTON  : "↻ ᴄʟᴏsᴇ ↻"
-CLOSEMENU_BUTTON  : "↻ ᴄʟᴏsᴇ ↻"
-BACK_BUTTON : "↻ ʙᴀᴄᴋ ↻"
+CLOSE_BUTTON  : "ᴄʟᴏsᴇ"
+CLOSEMENU_BUTTON  : "ᴄʟᴏsᴇ"
+BACK_BUTTON : "ʙᴀᴄᴋ"
 NEXT_PAGE: "▷"
 BACK_PAGE: "◁"
 UNBAN_BUTTON : "• ᴜɴʙᴀɴ •"

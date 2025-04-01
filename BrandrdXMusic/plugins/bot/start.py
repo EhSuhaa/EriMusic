@@ -93,8 +93,7 @@ async def start_pm(client, message: Message, _):
                 )
     else:
         try:
-            out = private_panel(_)
-            m = await message.reply_sticker("CAACAgUAAxkBAAEQI1BlTLmx7PtOO3aPNshEU2gCy7iAFgACNQUAApqMuVeA6eJ50VbvmDME")
+        
             out = private_panel(_)
             if message.chat.photo:
                 userss_photo = await app.download_media(
@@ -109,7 +108,7 @@ async def start_pm(client, message: Message, _):
         except AttributeError:
             chat_photo = "assets/nodp.png"
 
-        await m.delete()
+    
         await message.reply_photo(
             photo=chat_photo,
             caption=_["start_2"].format(message.from_user.mention, app.mention),

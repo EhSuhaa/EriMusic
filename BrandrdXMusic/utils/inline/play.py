@@ -89,12 +89,11 @@ def stream_markup(_, videoid, chat_id):
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
         [
-        
             InlineKeyboardButton(
-                text="ᴄᴘᴀɴᴇʟ", callback_data=f"PanelMarkup {vidid}|{chat_id}"
+                text="🥀 ᴏᴡɴᴇʀ 🥀", url=f"https://t.me/BRANDEDKING8"
             ),
             InlineKeyboardButton(
-                text="ꜱᴛᴀᴛᴜꜱ", url=f"https://t.me/IndiaBeatzstatus"
+                text="🥀 ᴄʜᴀᴛ 🥀", url=f"https://t.me/BRANDED_WORLD"
             ),
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
@@ -246,10 +245,10 @@ def stream_markup2(_, chat_id):
         ],
 [
             InlineKeyboardButton(
-                text="ᴄᴘᴀɴᴇʟ", callback_data=f"PanelMarkup {vidid}|{chat_id}"
+                text="🥀 ᴏᴡɴᴇʀ 🥀", url=f"https://t.me/BRANDEDKING8"
             ),
             InlineKeyboardButton(
-                text="ꜱᴛᴀᴛᴜꜱ", url=f"https://t.me/IndiaBeatzstatus"
+                text="🥀 ᴄʜᴀᴛ 🥀", url=f"https://t.me/BRANDED_WORLD"
             ),
         ],
 
@@ -265,26 +264,22 @@ def stream_markup_timer2(_, chat_id, played, dur):
     duration_sec = time_to_seconds(dur)
     percentage = (played_sec / duration_sec) * 100
     umm = math.floor(percentage)
-    if 0 < umm <= 10:
-        bar = "▁▄▂▇▄▅▄▅▃"
+    if 0 < umm <= 40:
+        bar = "◉——————————"
     elif 10 < umm < 20:
-        bar = "▁▃▇▂▅▇▄▅▃"
-    elif 20 <= umm < 30:
-        bar = "▃▁▇▂▅▃▄▃▅"
+        bar = "—◉—————————"
+    elif 20 < umm < 30:
+        bar = "——◉————————"
     elif 30 <= umm < 40:
-        bar = "▃▄▂▄▇▅▃▅▁"
+        bar = "———◉———————"
     elif 40 <= umm < 50:
-        bar = "▃▁▄▂▅▃▇▃▅"
+        bar = "————◉——————"
     elif 50 <= umm < 60:
-        bar = "▁▇▄▂▅▄▅▃▄"
-    elif 60 <= umm < 70:
-        bar = "▁▃▅▇▂▅▄▃▇"
-    elif 70 <= umm < 80:
-        bar = "▃▇▂▅▁▅▄▃▁"
-    elif 80 <= umm < 95:
-        bar = "▅▄▇▂▅▂▄▇▁"
+        bar = "——————◉————"
+    elif 50 <= umm < 70:
+        bar = "———————◉———"
     else:
-        bar = "▃▅▂▅▃▇▄▅▃"
+        bar = "——————————◉"
 
     buttons = [
         [
@@ -464,26 +459,22 @@ def panel_markup_4(_, vidid, chat_id, played, dur):
     duration_sec = time_to_seconds(dur)
     percentage = (played_sec / duration_sec) * 100
     umm = math.floor(percentage)
-    if 0 < umm <= 10:
-        bar = "▁▄▂▇▄▅▄▅▃"
+    if 0 < umm <= 40:
+        bar = "◉——————————"
     elif 10 < umm < 20:
-        bar = "▁▃▇▂▅▇▄▅▃"
-    elif 20 <= umm < 30:
-        bar = "▃▁▇▂▅▃▄▃▅"
+        bar = "—◉—————————"
+    elif 20 < umm < 30:
+        bar = "——◉————————"
     elif 30 <= umm < 40:
-        bar = "▃▄▂▄▇▅▃▅▁"
+        bar = "———◉———————"
     elif 40 <= umm < 50:
-        bar = "▃▁▄▂▅▃▇▃▅"
+        bar = "————◉——————"
     elif 50 <= umm < 60:
-        bar = "▁▇▄▂▅▄▅▃▄"
-    elif 60 <= umm < 70:
-        bar = "▁▃▅▇▂▅▄▃▇"
-    elif 70 <= umm < 80:
-        bar = "▃▇▂▅▁▅▄▃▁"
-    elif 80 <= umm < 95:
-        bar = "▅▄▇▂▅▂▄▇▁"
+        bar = "——————◉————"
+    elif 50 <= umm < 70:
+        bar = "———————◉———"
     else:
-        bar = "▃▅▂▅▃▇▄▅▃"
+        bar = "——————————◉"
 
     buttons = [
         [
@@ -554,4 +545,3 @@ def panel_markup_clone(_, vidid, chat_id):
     ]
 
     return buttons
-

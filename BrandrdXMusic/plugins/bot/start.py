@@ -19,7 +19,7 @@ from BrandrdXMusic.utils.database import (
 )
 from BrandrdXMusic.utils.decorators.language import LanguageStart
 from BrandrdXMusic.utils.formatters import get_readable_time
-from BrandrdXMusic.utils.inline import help_pannel, private_panel, start_panel
+from BrandrdXMusic.utils.inline import help_pannel, private_panel, start_panel, info_panel
 from config import BANNED_USERS
 from strings import get_string
 
@@ -149,7 +149,7 @@ async def start_pm(client, message: Message, _):
 @app.on_message(filters.command(["start"]) & filters.group & ~BANNED_USERS)
 @LanguageStart
 async def start_gp(client, message: Message, _):
-    out = start_panel(_)
+    out = info_panel(_)
     uptime = int(time.time() - _boot_)
     await message.reply_photo(
         photo=config.START_IMG_URL,

@@ -41,8 +41,8 @@ async def helper_private(
         _ = get_string(language)
         keyboard = help_pannel(_)
         
-        await update.reply_video(
-            video="https://graph.org/file/84d30d4fd04570c0e0256.mp4",
+        await update.reply_photo(
+            photo="https://files.catbox.moe/tczxdo.jpg",
             caption=_["help_1"].format(SUPPORT_CHAT), reply_markup=keyboard)
 
 

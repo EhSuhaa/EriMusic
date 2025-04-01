@@ -90,10 +90,10 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="ᴄᴘᴀɴᴇʟ", callback_data=f"PanelMarkup {vidid}|{chat_id}"
+                text="🥀 ᴏᴡɴᴇʀ 🥀", url=f"https://t.me/BRANDEDKING8"
             ),
             InlineKeyboardButton(
-                text="ꜱᴛᴀᴛᴜꜱ", url=f"https://t.me/IndiaBeatzStatus"
+                text="🥀 ᴄʜᴀᴛ 🥀", url=f"https://t.me/BRANDED_WORLD"
             ),
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
@@ -245,10 +245,10 @@ def stream_markup2(_, chat_id):
         ],
 [
             InlineKeyboardButton(
-                text="ᴄᴘᴀɴᴇʟ", callback_data=f"PanelMarkup {vidid}|{chat_id}"
+                text="🥀 ᴏᴡɴᴇʀ 🥀", url=f"https://t.me/BRANDEDKING8"
             ),
             InlineKeyboardButton(
-                text="ꜱᴛᴀᴛᴜꜱ", url=f"https://t.me/IndiaBeatzStatus"
+                text="🥀 ᴄʜᴀᴛ 🥀", url=f"https://t.me/BRANDED_WORLD"
             ),
         ],
 

@@ -16,7 +16,7 @@ BOT_TOKEN = "7520152051:AAHXN4A3PSdL54Oy50edXaEG3_NvTk3RZvo"
 
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://api:api@bleach-backend.b7rf7.mongodb.net/?retryWrites=true&w=majority&appName=bleach-backend")
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", None)
+MUSIC_BOT_NAME = "India Beatz"
 PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", None)
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 900))

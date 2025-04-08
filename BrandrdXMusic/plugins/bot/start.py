@@ -100,13 +100,13 @@ async def start_pm(client, message: Message, _):
                     message.chat.photo.big_file_id,
                 )
             else:
-                userss_photo = "assets/nodp.jpg"
+                userss_photo = "https://files.catbox.moe/tq8l4a.jpg"
             if userss_photo:
                 chat_photo = userss_photo
             chat_photo = userss_photo if userss_photo else START_IMG_URL
 
         except AttributeError:
-            chat_photo = "assets/nodp.jpg"
+            chat_photo = "https://files.catbox.moe/tq8l4a.jpg"
 
     
         await message.reply_photo(

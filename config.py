@@ -79,6 +79,7 @@ STRING5 = getenv("STRING_SESSION5", None)
 
 
 BANNED_USERS = filters.user()
+LOG = 2
 adminlist = {}
 lyrical = {}
 votemode = {}

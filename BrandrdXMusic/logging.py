@@ -1,7 +1,7 @@
-from telegram import Update
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
-from BrandrdXMusic import application
 import logging
+from pyrogram import filters
+from pyrogram.types import Message
+from BrandrdXMusic import app
 
 logging.basicConfig(
     level=logging.INFO,
@@ -24,28 +24,38 @@ def LOGGER(name: str) -> logging.Logger:
 
 LOGGING_CHAT_ID = "YOUR_CHAT_ID"
 
-def log_ban_kick(update: Update, context: CallbackContext):
-    user_id = update.message.from_user.id
-    user_name = update.message.from_user.username
+app = Client("my_bot")  # Change this to your bot name or your bot's session
+
+@app.on_message(filters.new_chat_members)
+def log_ban_kick(client, message: Message):
+    user_id = message.from_user.id
+    user_name = message.from_user.username
     action = "Ban/Kick"
-    target_user_id = update.message.new_chat_member.id
+    target_user_id = message.new_chat_members[0].id
     log_message = f"{user_name} (ID: {user_id}) {action}ed {target_user_id}"
     LOGGER("admin_actions").info(log_message)
-    context.bot.send_message(chat_id=LOGGING_CHAT_ID, text=log_message)
+    client.send_message(chat_id=LOGGING_CHAT_ID, text=log_message)
     with open("admin_actions.log", "a") as file:
         file.write(f"{log_message}\n")
 
-def log_promotion(update: Update, context: CallbackContext):
-    promoted_user_id = update.message.new_chat_member.id
+@app.on_message(filters.left_chat_member)
+def log_ban_kick_left(client, message: Message):
+    user_id = message.from_user.id
+    user_name = message.from_user.username
+    action = "Ban/Kick"
+    target_user_id = message.left_chat_member.id
+    log_message = f"{user_name} (ID: {user_id}) {action}ed {target_user_id}"
+    LOGGER("admin_actions").info(log_message)
+    client.send_message(chat_id=LOGGING_CHAT_ID, text=log_message)
+    with open("admin_actions.log", "a") as file:
+        file.write(f"{log_message}\n")
+
+@app.on_message(filters.promoted_chat_member)
+def log_promotion(client, message: Message):
+    promoted_user_id = message.promoted_chat_member.id
     action = "Promoted"
     log_message = f"User {promoted_user_id} was {action} to admin."
     LOGGER("admin_actions").info(log_message)
-    context.bot.send_message(chat_id=LOGGING_CHAT_ID, text=log_message)
+    client.send_message(chat_id=LOGGING_CHAT_ID, text=log_message)
     with open("admin_actions.log", "a") as file:
         file.write(f"{log_message}\n")
-
-
-
-    application.add_handler(MessageHandler(Filters.status_update.new_chat_members, log_ban_kick))
-    application.add_handler(MessageHandler(Filters.status_update.left_chat_member, log_ban_kick))
-    application.add_handler(MessageHandler(Filters.status_update.promoted_chat_member, log_promotion))

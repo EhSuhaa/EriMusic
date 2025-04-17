@@ -1,7 +1,7 @@
 import logging
 from pyrogram import filters
 from pyrogram.types import Message
-from BrandrdXMusic import app
+from BrandrdXMusic import *
 
 logging.basicConfig(
     level=logging.INFO,

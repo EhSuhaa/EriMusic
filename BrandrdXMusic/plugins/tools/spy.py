@@ -3,7 +3,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 from BrandrdXMusic import app
 
-LOGGING_CHAT_ID = "YOUR_CHAT_ID"
+LOGGING_CHAT_ID = "-1002505086730"
  
 @app.on_message(filters.new_chat_members)
 def log_ban_kick(client, message: Message):

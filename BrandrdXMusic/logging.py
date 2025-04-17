@@ -24,7 +24,7 @@ def LOGGER(name: str) -> logging.Logger:
 
 LOGGING_CHAT_ID = "YOUR_CHAT_ID"
 
-app = Client("my_bot")  # Change this to your bot name or your bot's session
+ 
 
 @app.on_message(filters.new_chat_members)
 def log_ban_kick(client, message: Message):

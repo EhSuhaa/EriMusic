@@ -40,7 +40,7 @@ async def helper_private(
         keyboard = help_pannel(_)
         
         await update.reply_photo(
-            photo="https://files.catbox.moe/tczxdo.jpg",
+            photo="https://files.catbox.moe/jtdfiw.jpg",
             caption=_["help_1"].format(SUPPORT_CHAT), reply_markup=keyboard)
 
 
@@ -49,7 +49,7 @@ async def helper_private(
 async def help_com_group(client, message: Message, _):
     keyboard = private_help_panel(_)
     await message.reply_photo(
-        photo="https://files.catbox.moe/u91otg.jpg",
+        "https://files.catbox.moe/jtdfiw.jpg",
         caption=_["help_2"], reply_markup=InlineKeyboardMarkup(keyboard)
     )
 

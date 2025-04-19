@@ -28,7 +28,6 @@ from strings import get_string
 @LanguageStart
 async def start_pm(client, message: Message, _):
     await add_served_user(message.from_user.id)
-    await message.react("❤")
 
     if len(message.text.split()) > 1:
         name = message.text.split(None, 1)[1]
@@ -95,20 +94,6 @@ async def start_pm(client, message: Message, _):
         try:
         
             out = private_panel(_)
-            if message.chat.photo:
-                userss_photo = await app.download_media(
-                    message.chat.photo.big_file_id,
-                )
-            else:
-                userss_photo = "https://files.catbox.moe/tq8l4a.jpg"
-            if userss_photo:
-                chat_photo = userss_photo
-            chat_photo = userss_photo if userss_photo else START_IMG_URL
-
-        except AttributeError:
-            chat_photo = "https://files.catbox.moe/tq8l4a.jpg"
-
-    
         await message.reply_photo(
             photo="https://files.catbox.moe/jtdfiw.jpg",
             caption=_["start_2"].format(message.from_user.mention, app.mention),

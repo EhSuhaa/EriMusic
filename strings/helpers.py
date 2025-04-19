@@ -38,7 +38,7 @@ HELP_3 = """
 """
 
 HELP_4 = """
-🔧 Misc Help
+<b>🔧 Misc Help</b>
 
 → <code>/player</code> : shows the panel.
 → <code>/settings</code> : configure the settings.

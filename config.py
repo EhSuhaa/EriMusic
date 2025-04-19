@@ -35,10 +35,10 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/EhSuhaa/MEst",
+    "https://github.com/EhSuhaa/EriMusic",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
-GIT_TOKEN = "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" 
+GIT_TOKEN = "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" 
 
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/IndiaBeatzStatus")
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/IndiaBeatzStatus")

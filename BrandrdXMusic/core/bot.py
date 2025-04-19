@@ -28,7 +28,11 @@ class Hotty(Client):
         try:
             await self.send_message(
                 chat_id=config.LOGGER_ID,
-                text=f"<b>Eri Music</b> started successfully </>",
+                text=f"<b>Pyrogram<b> instance has been started",
+            )
+            await self.send_message(
+                chat_id=config.LOGGER_ID,
+                text=f"<b>Eri Music</b> started successfully </>!",
             )
         except (errors.ChannelInvalid, errors.PeerIdInvalid):
             LOGGER(__name__).error(

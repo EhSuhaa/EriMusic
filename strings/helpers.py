@@ -4,7 +4,7 @@ HELP_1 = """<b>🛠 Admin Help (Admins and Auth Only)</b>
 → <code>/unauth</code> : Unauthorise a user from using admin commands.
 → <code>/authusers</code> : List of Auth users that has been added.
 
-<i>Click the below button to go back</i>
+<i>Click the below button to go back.</i>
 """
 
 HELP_2 = """
@@ -34,16 +34,17 @@ HELP_3 = """
 → <code>/cvplayforcr</code> : Play's the requested video forcefully skipping the current one.
 → <code>/channelplay</code>[chat username or id] : Connect a channel to group.
 
-<i> Click the below button to go back</i>
+<i> Click the below button to go back.</i>
 """
 
-HELP_4 = """<u><b>ᴄʜᴀᴛ ʙʟᴀᴄᴋʟɪsᴛ ғᴇᴀᴛᴜʀᴇ :</b></u> [ᴏɴʟʏ ғᴏʀ sᴜᴅᴏᴇʀs]
+HELP_4 = """
+🔧 Misc Help
 
-ʀᴇsᴛʀɪᴄᴛ sʜɪᴛ ᴄʜᴀᴛs ᴛᴏ ᴜsᴇ ᴏᴜʀ ᴘʀᴇᴄɪᴏᴜs ʙᴏᴛ.
+→ <code>/player</code> : shows the panel.
+→ <code>/settings</code> : configure the settings.
+→ <code>/reload</code> : refreshes the admin cache.
 
-/blacklistchat [ᴄʜᴀᴛ ɪᴅ] : ʙʟᴀᴄᴋʟɪsᴛ ᴀ ᴄʜᴀᴛ ғʀᴏᴍ ᴜsɪɴɢ ᴛʜᴇ ʙᴏᴛ.
-/whitelistchat [ᴄʜᴀᴛ ɪᴅ] : ᴡʜɪᴛᴇʟɪsᴛ ᴛʜᴇ ʙʟᴀᴄᴋʟɪsᴛᴇᴅ ᴄʜᴀᴛ.
-/blacklistedchat : sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ ʙʟᴀᴄᴋʟɪsᴛᴇᴅ ᴄʜᴀᴛs.
+<i>Click the below button to go back.</i>
 """
 
 HELP_5 = """

@@ -8,13 +8,21 @@ HELP_1 = """<b>🛠 Admin Help (Admins and Auth Only)</b>
 """
 
 HELP_2 = """
-<b><u>ᴀᴜᴛʜ ᴜsᴇʀs :</b></u>
+<b>🎧 Playback Help(Default Play Mode - Admin Only)</b>
 
-ᴀᴜᴛʜ ᴜsᴇʀs ᴄᴀɴ ᴜsᴇ ᴀᴅᴍɪɴ ʀɪɢʜᴛs ɪɴ ᴛʜᴇ ʙᴏᴛ ᴡɪᴛʜᴏᴜᴛ ᴀᴅᴍɪɴ ʀɪɢʜᴛs ɪɴ ᴛʜᴇ ᴄʜᴀᴛ.
+→ <code>/play</code> : Play a new song or add it to the queue.
+→ <code>/vplay</code> : Play a video or add it to the queue.
+→ <code>/playforce</code> : Play a song forcefully skipping the current one.
+→ <code>/vplayforce</code> : Play a video forcefully skipping the current one.
+→ <code>/pause</code> : Pause the current song.
+→ <code>/resume</code> : Resume the current song.
+→ <code>/seek</code> : Seek to n seconds. 
+→ <code>/end</code> : End the current song.
+→ <code>/skip</code> : Skip the current song.
+→ <code>/queue</code> : Show the current queue.
+→ <code>/shuffle</code> : Shuffle the current queue.
 
-/auth [ᴜsᴇʀɴᴀᴍᴇ/ᴜsᴇʀ_ɪᴅ] : ᴀᴅᴅ ᴀ ᴜsᴇʀ ᴛᴏ ᴀᴜᴛʜ ʟɪsᴛ ᴏғ ᴛʜᴇ ʙᴏᴛ.
-/unauth [ᴜsᴇʀɴᴀᴍᴇ/ᴜsᴇʀ_ɪᴅ] : ʀᴇᴍᴏᴠᴇ ᴀ ᴀᴜᴛʜ ᴜsᴇʀs ғʀᴏᴍ ᴛʜᴇ ᴀᴜᴛʜ ᴜsᴇʀs ʟɪsᴛ.
-/authusers : sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ ᴀᴜᴛʜ ᴜsᴇʀs ᴏғ ᴛʜᴇ ɢʀᴏᴜᴩ.
+<i>Click the button below to go back.</i>
 """
 
 HELP_3 = """

@@ -110,7 +110,7 @@ async def start_pm(client, message: Message, _):
 
     
         await message.reply_photo(
-            photo="https://envs.sh/YpI.jpg",
+            photo="https://files.catbox.moe/jtdfiw.jpg",
             caption=_["start_2"].format(message.from_user.mention, app.mention),
             reply_markup=InlineKeyboardMarkup(out),
         )
